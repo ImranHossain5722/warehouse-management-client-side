@@ -1,0 +1,34 @@
+[
+
+    {
+   
+      
+       "name":"Mercedes Benz Silver Knight",
+       "brand":"Ferrari",
+       "price":15200,
+       "quantity":3,
+       "supplier-name":"CarSale",
+       "description": "We have been the market leader for 5 years",
+       "img":"https://res.cloudinary.com/dk0lorahh/image/upload/v1648239069/balckFerrari_asl6ys.jpg"
+   
+   
+    },
+
+    {
+   
+      
+        "name":"Audi A1 Contrast Edition",
+        "brand":"Ferrari",
+        "price":15200,
+        "quantity":4,
+        "supplier-name":"CarSale",
+        "description": "We have been the market leader for 5 years",
+        "img":"https://res.cloudinary.com/dk0lorahh/image/upload/v1648239069/balckFerrari_asl6ys.jpg"
+    
+    
+     }
+   
+    
+   
+   
+   ]
