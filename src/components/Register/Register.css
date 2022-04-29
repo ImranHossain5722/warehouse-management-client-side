@@ -1,6 +1,25 @@
-.form{
+.form-container{
+
 border-radius: 20px;
-background: linear-gradient(145deg, #cacaca, #f0f0f0);
+background: linear-gradient(145deg, #b19d9d, #7f84d1);
 box-shadow:  35px 35px 100px #bebebe,
              -35px -35px 100px #ffffff;
+
+}
+.form{
+
+ padding: 50px;            
+}
+
+.form-container h1{
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.text-m{
+    color: #ffffff;
+}
+.form-p{
+    text-align: center;
+    padding: 20px ;
+    color: white;
 }
