@@ -26,7 +26,7 @@ function App() {
         </Routes>
       
        <Footer/>
-       <ToastContainer></ToastContainer>
+       <ToastContainer />
     </div>
   );
 }
