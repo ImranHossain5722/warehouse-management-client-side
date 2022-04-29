@@ -1,0 +1,15 @@
+.div-wrap{
+background-image: url('../../Images/ca-bg-banner2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+height: 650px;
+
+}
+
+.h1-text{
+padding:100px 0px 0px 0px ;
+font-size: 50px;
+color: white;
+ font-weight: 800;
+
+}

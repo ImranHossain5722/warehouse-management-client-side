@@ -1,9 +1,11 @@
 import React from 'react';
+import logo from '../../../Images/Logo.png'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import './Header.css'
 
 
 const Header = () => {
@@ -16,9 +18,9 @@ const Header = () => {
     <header> 
             <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <Navbar.Brand className="d-inline-block  "
-               as={Link} to ='/'>
-              CarSale 
+          <Navbar.Brand className="d-inline-block d-flex align-items-center logo-text "
+               as={Link} to ='/'> Car<img height={50} src={logo} alt="" />
+              
               </Navbar.Brand>
         
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
