@@ -1,0 +1,6 @@
+.form{
+border-radius: 20px;
+background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  35px 35px 100px #bebebe,
+             -35px -35px 100px #ffffff;
+}
