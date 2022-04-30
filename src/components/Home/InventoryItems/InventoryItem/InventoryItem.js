@@ -1,9 +1,18 @@
 import { Button } from "bootstrap";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './InventoryItem.css'
 
 const InventoryItem = ({ inventoryItem }) => {
-  const { name, img, price, brand, description, quantity, supplierName } = inventoryItem;
+  const { _id, name, img, price, brand, description, quantity, supplierName } = inventoryItem;
+
+    const navigate = useNavigate()
+
+    const navigateButton = id =>{
+
+        navigate(`/inventoryItem/${id}`)
+    }
+
   return (
     <div>
       <div className="card mx-2 inventory-item-div mt-5">
@@ -15,7 +24,7 @@ const InventoryItem = ({ inventoryItem }) => {
           <p><span className="inventory-text" >Quantity : </span>{quantity}</p>
           <p><span className="inventory-text" >Price : </span>{price}</p>
           <p><span className="inventory-text" >Short Detail :</span> {description}</p>
-           <button className="btn-mange-stock d-flx justify-content-center" >Manage Stock</button>
+           <button className="btn-mange-stock d-flx justify-content-center" onClick={()=> navigateButton (_id)} >Manage Stock</button>
           </div>
       </div>
     </div>

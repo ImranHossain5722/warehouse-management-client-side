@@ -24,7 +24,7 @@ function App() {
           <Route path='blogs'element={<Blogs></Blogs>} ></Route>
           <Route path='login' element={<Login></Login>}></Route>
           <Route path='register' element={<Register></Register>}></Route>
-          <Route path='manageitem' element={<ManageItems></ManageItems>} ></Route>
+          <Route path='/manageitem/:inventoryId' element={<ManageItems></ManageItems>} ></Route>
           <Route path='additem' element={<AddItem></AddItem>} ></Route>
           <Route path='myitem' element={<MyItems></MyItems>} ></Route>
           <Route path='*' element={<NotFound></NotFound>}> </Route>

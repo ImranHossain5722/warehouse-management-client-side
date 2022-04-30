@@ -17,7 +17,7 @@ const InventoryItems = () => {
   return (
     <div className="container">
       <div className="row">
-          <h1 className="text-center">We have items in stock: {inventoryItems.length}</h1>
+          <h1 className="text-center pt-4">We have items in stock: {inventoryItems.length}</h1>
           <div style={{ height: "3px" , width:"50px" }} className="bg-primary  mx-auto "></div>
 
           <div className="inventory-container  " >
