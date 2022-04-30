@@ -3,4 +3,29 @@
     background: #f3ecec;
     box-shadow:  5px -5px 10px #c5bfbf,
                  -5px 5px 10px #ffffff;
+    position: relative;
+    height: 820px;
+    width: 350px;
+
+
+}
+.btn-mange-stock{
+    position: absolute;
+    bottom:0;
+    border: none;
+    border-radius: 5px;
+    background-color: #78afd33f;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    color: #1b193d;
+
+
+    
+}
+.btn-mange-stock:hover{
+    background-color: #5ba9ddea;
+    color: white;
+   transition: 0.5s;
 }
