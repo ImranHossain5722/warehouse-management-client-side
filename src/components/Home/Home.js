@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "../../Images/car-banner1.png";
-import CarInventory from "./CarsInventory/CarInventory";
+import InventoryItems from "../Home/InventoryItems/InventoryItems";
+
 import "./Home.css";
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <CarInventory></CarInventory>
+      <InventoryItems></InventoryItems>
     </div>
   );
 };

@@ -1,0 +1,6 @@
+.inventory-item-div{
+    border-radius: 19px;
+    background: #f3ecec;
+    box-shadow:  5px -5px 10px #c5bfbf,
+                 -5px 5px 10px #ffffff;
+}
