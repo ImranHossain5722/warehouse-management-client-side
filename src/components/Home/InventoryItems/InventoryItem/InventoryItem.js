@@ -8,9 +8,9 @@ const InventoryItem = ({ inventoryItem }) => {
 
     const navigate = useNavigate()
 
-    const navigateButton = id =>{
+    const navigateButton = _id =>{
 
-        navigate(`/inventoryItem/${id}`)
+        navigate(`manageitem/${_id}`)
     }
 
   return (
@@ -24,7 +24,7 @@ const InventoryItem = ({ inventoryItem }) => {
           <p><span className="inventory-text" >Quantity : </span>{quantity}</p>
           <p><span className="inventory-text" >Price : </span>{price}</p>
           <p><span className="inventory-text" >Short Detail :</span> {description}</p>
-           <button className="btn-mange-stock d-flx justify-content-center" onClick={()=> navigateButton (_id)} >Manage Stock</button>
+           <button className="btn-mange-stock d-flx justify-content-center" onClick={()=>navigateButton(_id)} >Manage Stock</button>
           </div>
       </div>
     </div>
