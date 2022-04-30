@@ -1,10 +1,22 @@
 .div-wrap{
 background-image: url('../../Images/ca-bg-banner2.jpg');
 background-repeat: no-repeat;
+background-position: top;
 background-size: cover;
-height: 650px;
+height: 750px;
 
 }
+
+.img-div img{
+    margin:0px 50px 0px  0px;
+    
+
+}
+
+.div-wrap-text h1, p{
+    margin: 20px 50px 0px 50px;
+}
+
 
 .h1-text{
 padding:100px 0px 0px 0px ;

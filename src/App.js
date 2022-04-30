@@ -10,6 +10,9 @@ import Login from './components/Login/Login/Login'
 import Register from './components/Register/Register'
 import NotFound from './components/Shared/NotFound/NotFound'
 import { Route, Routes } from 'react-router-dom';
+import ManageItems from './components/Manage Items/ManageItems';
+import AddItem from './components/AddItem/AddItem';
+import MyItems from './components/MyItems/MyItems';
 
 function App() {
   return (
@@ -21,7 +24,9 @@ function App() {
           <Route path='blogs'element={<Blogs></Blogs>} ></Route>
           <Route path='login' element={<Login></Login>}></Route>
           <Route path='register' element={<Register></Register>}></Route>
-          
+          <Route path='manageitem' element={<ManageItems></ManageItems>} ></Route>
+          <Route path='additem' element={<AddItem></AddItem>} ></Route>
+          <Route path='myitem' element={<MyItems></MyItems>} ></Route>
           <Route path='*' element={<NotFound></NotFound>}> </Route>
         </Routes>
       
