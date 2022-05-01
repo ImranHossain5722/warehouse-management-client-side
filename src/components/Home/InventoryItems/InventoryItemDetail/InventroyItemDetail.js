@@ -26,7 +26,7 @@ const InventoryItemDetail = () => {
             <p><span className="inventory-text" >Supplier Name :</span> {inventoryItem.supplierName}</p>
           <p><span className="inventory-text" >Car Name : </span>{inventoryItem.name}</p>
           <p><span className="inventory-text" >Brand:</span> {inventoryItem.brand}</p>
-          <p><span className="inventory-text" >Quantity : </span>{inventoryItem.quantity}</p>
+          <p><span className="inventory-text" >Quantity : </span>{inventoryItem.length}</p>
           <p><span className="inventory-text" >Price : </span>{inventoryItem.price}</p>
           <p><span className="inventory-text" >Short Detail :</span> {inventoryItem.description}</p>
 

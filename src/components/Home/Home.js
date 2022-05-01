@@ -3,6 +3,7 @@ import banner from "../../Images/car-banner2.png";
 import InventoryItems from "../Home/InventoryItems/InventoryItems";
 
 import "./Home.css";
+import SectionFour from "./SectionFour/SectionFour";
 import SectionThree from "./SectionThree/SectionThree";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
       </div>
       <InventoryItems></InventoryItems>
       <SectionThree></SectionThree>
+      <SectionFour></SectionFour>
 
     </div>
   );
