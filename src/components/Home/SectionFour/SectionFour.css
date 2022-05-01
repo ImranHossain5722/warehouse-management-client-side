@@ -1,0 +1,96 @@
+.main-div {
+    background-color: rgb(20, 19, 19);
+    padding: 20px;
+    margin-top: 50px;
+}
+.span-carSale{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.popular-h2{
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+
+}
+
+.big-imag{
+    background-image: url(../../../Images/gpCar.jpg),linear-gradient(rgba(28, 29, 37, 0.5),rgba(7, 3, 3, 0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 600px;
+    position: relative;    
+
+}
+
+.big-imag :hover{
+    transform: scale(0.8);
+    color:rgb(45, 58, 95);
+    transition: 1ms;
+    
+}
+
+
+.carName{
+position: absolute;
+bottom:20px;
+color: white;
+font-size:50px;
+
+}
+
+.carName1{
+
+    position: absolute;
+    bottom:20px;
+    left: 50px;
+    color: white;
+    font-size:40px;
+      
+}
+
+.carName2{
+    position: absolute;
+    bottom:20px;
+    left: 50px;
+    color: white;
+    font-size:40px;
+}
+.small-divImg1{
+    background-image: url(../../../Images/Toyoata-runner.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 300px;
+    margin: 0px 10px 10px 0px ;
+    position: relative;  
+
+}
+
+.small-divImg1 :hover{
+    transform: scale(0.8);
+    color:rgb(45, 30, 184);
+    transition: 1ms;
+    
+}
+
+.small-divImg2{
+    background-image: url(../../../Images/marctiz.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: overlay;
+    height: 300px;
+    position: relative;  
+}
+
+.small-divImg2 :hover{
+    transform: scale(0.8);
+    color:rgb(45, 30, 184);
+    transition: 1ms;
+    
+}
