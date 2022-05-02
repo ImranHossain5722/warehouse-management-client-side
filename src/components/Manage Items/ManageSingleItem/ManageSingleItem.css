@@ -2,7 +2,7 @@
   border: 1px solid #71b8e4;
   border-radius: 8px;
   padding: 8px;
-  width: 600px;
+  width: 700px;
   display: flex;
   align-items: center;
   justify-content:space-evenly;
@@ -10,7 +10,7 @@
 }
 
 .items-img img {
-  width: 150px;
+  width: 100px;
 }
 .items-container {
   display: flex;
@@ -22,3 +22,25 @@
   display: flex;
   align-items: center;
 }
+.deleteIcon{
+    color: #51445a;
+    font-size: 20px;
+    border:1px solid rgb(18, 15, 194);
+    padding: 10px;
+    border-radius: 50px;
+}
+.deleteIcon :hover{
+    color:rgba(209, 19, 19, 0.979);  
+
+    border: 2px solid rgba(209, 19, 19, 0.979);
+}
+
+.items-details p{
+    margin: 0;
+    padding: 0;
+}
+.items-detail{
+    color:rgb(1, 1, 2);
+    font-weight:500;
+}
+
