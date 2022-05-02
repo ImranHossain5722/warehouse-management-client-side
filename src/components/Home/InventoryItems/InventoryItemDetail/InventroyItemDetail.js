@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
 const InventoryItemDetail = () => {
@@ -29,7 +30,7 @@ const InventoryItemDetail = () => {
           <p><span className="inventory-text" >Quantity : </span>{inventoryItem.length}</p>
           <p><span className="inventory-text" >Price : </span>{inventoryItem.price}</p>
           <p><span className="inventory-text" >Short Detail :</span> {inventoryItem.description}</p>
-
+              <Button>Delivered</Button>
             </div>
 
 

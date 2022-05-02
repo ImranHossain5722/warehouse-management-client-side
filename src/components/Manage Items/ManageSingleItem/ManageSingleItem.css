@@ -1,0 +1,24 @@
+.main-items-container {
+  border: 1px solid #71b8e4;
+  border-radius: 8px;
+  padding: 8px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  
+}
+
+.items-img img {
+  width: 150px;
+}
+.items-container {
+  display: flex;
+ 
+ 
+}
+
+.delete-btn-container {
+  display: flex;
+  align-items: center;
+}

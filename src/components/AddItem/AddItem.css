@@ -1,0 +1,7 @@
+.main-form-wrap{
+    margin-top: 50px;
+    border-radius: 11px;
+    background: #636ec5;
+    box-shadow: inset -20px 20px 36px #545ea7,
+                inset 20px -20px 36px #727fe3;
+}
