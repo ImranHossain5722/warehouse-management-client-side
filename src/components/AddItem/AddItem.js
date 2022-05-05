@@ -50,7 +50,7 @@ const addItemsHandel =(event)=>{
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
             type="text"
-            name="carName"
+            name="name"
             placeholder="Enter Your car name"
           />
         </Form.Group>

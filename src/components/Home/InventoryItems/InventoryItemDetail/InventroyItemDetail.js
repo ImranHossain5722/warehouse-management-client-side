@@ -19,7 +19,7 @@ const InventoryItemDetail = () => {
   
    <div>
        <div className="container" >
-        <div className="row">
+        <div className="row ">
             <div className="col-6" >
                 <img className="img-fluid" src={inventoryItem.img} alt="" />
             </div>
@@ -30,8 +30,10 @@ const InventoryItemDetail = () => {
           <p><span className="inventory-text" >Quantity : </span>{inventoryItem.length}</p>
           <p><span className="inventory-text" >Price : </span>{inventoryItem.price}</p>
           <p><span className="inventory-text" >Short Detail :</span> {inventoryItem.description}</p>
-              <Button>Delivered</Button>
-            </div>
+            <Button>Delivered</Button>
+
+            
+          </div>
 
 
         </div>
