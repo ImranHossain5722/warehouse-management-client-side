@@ -5,6 +5,7 @@ import auth from "../../../firebase.init";
 import SocialLogin from "../../../components/Login/SocialLogin/SocialLogin";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import {toast } from 'react-toastify';
+import axios from "axios";
 
 
 const Login = () => {
@@ -23,7 +24,7 @@ const Login = () => {
 
 
   if (user) {
-    navigate(from, { replace: true });
+    // navigate(from, { replace: true });
   }
 
   if (error) {
@@ -35,13 +36,18 @@ const Login = () => {
   }
 
   // login handal
-  const loginHandal = (event) => {
+  const loginHandal = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    signInWithEmailAndPassword(email, password);
+    await signInWithEmailAndPassword(email, password);
+    const {data} = await axios.post('https://rocky-dawn-40302.herokuapp.com/login',{email})
+
+    console.log(data)
   };
+
+
 
   return (
     <div className=" w-50 mx-auto mt-5 form-container ">

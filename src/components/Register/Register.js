@@ -1,10 +1,10 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import SocialLogin from "../Login/SocialLogin/SocialLogin";
-import "./Register.css";
+import "./Register.css" ;
 
 const Register = () => {
   //for navigate
@@ -14,16 +14,19 @@ const Register = () => {
   };
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  
+
 
   // submit handal
   const registerHandal = (event) => {
+
     event.preventDefault();
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
     createUserWithEmailAndPassword(email, password);
+    navigate ('/home')
 
-    console.log(name, email, password);
   };
   return (
     <div className=" w-50 mx-auto mt-5 form-container ">

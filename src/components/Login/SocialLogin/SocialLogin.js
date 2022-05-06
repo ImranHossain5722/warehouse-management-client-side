@@ -4,10 +4,17 @@ import auth from "../../../firebase.init";
 import google from '../../../Images/social-images/Google-Logo.png'
 import {useSignInWithGoogle} from 'react-firebase-hooks/auth'
 import './SocialLogin.css'
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
-
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const location =useLocation();
+  let from = location.state?.from?.pathname || "/";
+  const navigate = useNavigate();
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  if (user) {
+    navigate(from, { replace: true });
+  }
+  
 
   return (
     <div className=" w-50 mx-auto">

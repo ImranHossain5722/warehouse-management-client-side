@@ -5,6 +5,7 @@ import InventoryItems from "../Home/InventoryItems/InventoryItems";
 import "./Home.css";
 import SectionFour from "./SectionFour/SectionFour";
 import SectionThree from "./SectionThree/SectionThree";
+import Blogs from "../Blogs/Blogs"
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
       <InventoryItems></InventoryItems>
       <SectionThree></SectionThree>
       <SectionFour></SectionFour>
+      <Blogs></Blogs>
 
     </div>
   );

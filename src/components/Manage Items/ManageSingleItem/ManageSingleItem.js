@@ -13,7 +13,7 @@ const navigate = useNavigate ()
    navigate ('/additem')
  }
 
-  const {_id, name, img, price, brand, quantity, supplierName } = useInventoryItem;
+  const {_id, email, img, price, brand, quantity, supplierName } = useInventoryItem;
 
     
   return (
@@ -24,11 +24,11 @@ const navigate = useNavigate ()
 
       <div className=" items-container">
         <div className="items-details">
-          <p> <span className="items-detail">Name:</span> {name}</p>
+  
           <p> <span className="items-detail">Brand:</span> {brand}</p>
           <p> <span className="items-detail">Quantity:</span> {quantity}</p>
           <p> <span className="items-detail">Supplier Name:</span> {supplierName}</p>
-          <p> <span className="items-detail">Price :</span> {price}</p>
+          <p> <span className="items-detail">Price :</span> $ {price}</p>
         </div>
         <div className="delete-btn-container">
           <button className="btn"onClick={()=>handelDelete(_id)} > <FontAwesomeIcon className="deleteIcon" icon={faTrash} ></FontAwesomeIcon> </button>

@@ -2,21 +2,26 @@ import { Button } from "react-bootstrap";
 import React from "react";
 import { Form } from "react-bootstrap";
 import './AddItem.css'
+import { toast } from "react-toastify";
+import {useAuthState} from 'react-firebase-hooks/auth'
+import auth from '../../firebase.init';
 
 const AddItem = () => {
+
+ 
 
 const addItemsHandel =(event)=>{
     event.preventDefault();
     const supplierName =event.target.supplierName.value;
-    const name= event.target.name.value ;
+    const email= event.target.email.value ;
     const brand=event.target.brand.value ; 
     const quantity=event.target.quantity.value ;  
     const price=event.target.price.value ;  
     const description=event.target.description.value ;  
     const img=event.target.img.value ;  
-    const user ={supplierName, name, brand, quantity, price, description,img}
+    const user ={supplierName, email, brand, quantity, price, description,img}
 
-    console.log(supplierName, name, brand,  quantity, price, description,  img );
+    console.log(supplierName, email, brand,  quantity, price, description,  img );
 
         const url = `https://rocky-dawn-40302.herokuapp.com/inventoryItems`
         fetch(url,{
@@ -25,13 +30,12 @@ const addItemsHandel =(event)=>{
                 'content-type':'application/json'
             },
             body:JSON.stringify(user)
-
-
         })
-
         .then(res=> res.json())
         .then(result =>{
-            console.log(result);
+            
+            toast('Add Stock Items Successfully')
+            event.target.reset();
         })
 
 }
@@ -49,9 +53,9 @@ const addItemsHandel =(event)=>{
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
-            type="text"
-            name="name"
-            placeholder="Enter Your car name"
+            type="email"
+            name="email"
+            placeholder="Enter Your email"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">

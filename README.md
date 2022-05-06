@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+#My Project Name Is CarSale
+
+My project live site Link : https://carsale-a3464.web.app/
+My Project live server-site link: https://rocky-dawn-40302.herokuapp.com/
+
+#My project Features
+* Register email and password.
+* Register with Google Sign .
+* Login with email and password .
+* Login with Google Sign.
+* You Can ADD you Stock your items .
+* you can DELETE your Stock items.
+* you can UPDATE you added items by update form .
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
