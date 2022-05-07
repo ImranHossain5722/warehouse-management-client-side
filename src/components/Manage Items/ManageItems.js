@@ -1,9 +1,37 @@
+import { useEffect, useState } from "react";
 import UseInventoryItems from "../../Hooks/UseInventoryItems/UseInventoryItems";
 import ManageSingleItem from "./ManageSingleItem/ManageSingleItem";
+import "./ManageItems.css";
 
 const ManageItems = () => {
-  const [useInventoryItems, setUseInventoryItems] = UseInventoryItems();
+  const [useInventoryItems, setUseInventoryItems] = useState([]);
 
+  // pagination State
+  const [pageCount, setPageCount] = useState(0);
+  const [page, setPage] = useState(0);
+  const [size, setSize] = useState(10);
+
+  // all items load  data
+  useEffect(() => {
+    fetch(
+      `https://rocky-dawn-40302.herokuapp.com/inventoryItems?page=${page}&size=${size}`
+    )
+      .then((res) => res.json())
+      .then((data) => setUseInventoryItems(data));
+  }, [page, size]);
+
+  // pagination count
+  useEffect(() => {
+    fetch("https://rocky-dawn-40302.herokuapp.com/inventoryImtesCount")
+      .then((res) => res.json())
+      .then((data) => {
+        const count = data.count;
+        const pages = Math.ceil(count / 10);
+        setPageCount(pages);
+      });
+  }, []);
+
+  //for delete
   const handelDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete items");
     if (proceed) {
@@ -13,7 +41,6 @@ const ManageItems = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           const remaining = useInventoryItems.filter(
             (useInventoryItem) => useInventoryItem._id !== id
           );
@@ -33,7 +60,7 @@ const ManageItems = () => {
           className="bg-primary  mx-auto "
         ></div>
 
-        <div className="">
+        <div className="managment-div">
           {useInventoryItems.map((useInventoryItem) => (
             <ManageSingleItem
               key={useInventoryItem._id}
@@ -41,6 +68,23 @@ const ManageItems = () => {
               handelDelete={handelDelete}
             ></ManageSingleItem>
           ))}
+          <div className="pageination">
+            {[...Array(pageCount).keys()].map((number) => (
+              <button
+                className={page === number ? "selected" : ""}
+                onClick={() => setPage(number)}
+              >
+                {number + 1}
+              </button>
+            ))}
+            <select onChange={(event) => setSize(event.target.value)}>
+              <option value="5">5</option>
+              <option value="10" selected>
+                10
+              </option>
+              <option value="15">15</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

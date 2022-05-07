@@ -12,9 +12,8 @@ const Blog = ({SingleBlog}) => {
           <div className="card-body p-">
           <p className='text-left'> Author: {admin}</p>
           <p className="fs-5 font-weight-bold"> {title}</p>
-          <p className="blog-preview text-justify ">{blog.length<400 ? blog.length :blog.slice(0,400) }
-            <button className='btn btn-light' onClick={()=> navigate(`/blog/${_id}`) }>.....Read More </button>
-          </p>
+          <p className="blog-preview text-justify ">{blog.length<400? blog.length :blog.slice(0,400) }</p>
+          <button className=' blog-btn ' onClick={()=> navigate(`/blog/${_id}`) }>Read More </button>
           </div>
       </div>
         </div>

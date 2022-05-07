@@ -1,7 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import carBanner from "../../../Images/car2.webp";
 import './SectionThree.css'
 const SectionThree = () => {
+
+  const navegate = useNavigate()
+  
+   const navegateToMagePage =()=>{
+
+    navegate('/manageitem')
+   }
+ 
+
   return (
     <div>
       <div className="container mt-5">
@@ -13,7 +23,7 @@ const SectionThree = () => {
               Midnight Edition. From black wheels to a black rear spoiler, this
               vehicle is built to turn heads — day or night.
             </p>
-            <button>Show More</button>
+            <button onClick={navegateToMagePage }>Show More</button>
           </div>
 
           <div className="col-12 col-md-4 col-lg-4 img-dev">

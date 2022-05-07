@@ -12,7 +12,8 @@ const InventoryItems = () => {
   }
 
   const [inventoryItems , setInventoryItems]= useState([])
-
+  
+  const inventory = inventoryItems.slice(0,6)
   useEffect(()=>{
    
     fetch ('https://rocky-dawn-40302.herokuapp.com/inventoryItems')
@@ -20,6 +21,9 @@ const InventoryItems = () => {
     .then (data => setInventoryItems(data))
 
   },[])
+
+
+
 
   return (
     <div className="container">
@@ -29,12 +33,12 @@ const InventoryItems = () => {
 
           <div className="inventory-container  " >
               {
-                inventoryItems.map(inventoryItem => <InventoryItem key={inventoryItem._id} inventoryItem={inventoryItem} > </InventoryItem>)
+                inventory.map(inventoryItem => <InventoryItem key={inventoryItem._id} inventoryItem={inventoryItem} > </InventoryItem>)
               }
               
              
           </div>
-          <Button className=" w-25 mx-auto mt-5" onClick={()=>moveToManageItemPage()}> Manage Inventory Items</Button>
+          <Button className=" w-25 mx-auto mt-5" onClick={()=>moveToManageItemPage()}> Manage Inventory All Items </Button>
       </div>
     </div>
   );

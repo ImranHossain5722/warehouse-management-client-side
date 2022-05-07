@@ -16,7 +16,7 @@ const InventoryItem = ({ inventoryItem }) => {
   return (
     <div>
       <div className="card mx-2 inventory-item-div mt-5">
-          <img className="card-img-top" src={img} alt=""/>
+          <img className="card-img-top" height="450" src={img} alt=""/>
 
           <div className="card-body p-0">
           <p className="pt-2"><span className="inventory-text" >Supplier Name :</span> {supplierName}</p>
