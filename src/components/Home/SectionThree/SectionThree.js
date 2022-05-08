@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import carBanner from "../../../Images/car2.webp";
+import carBanner from "../../../Images/car-banner1.webp";
 import './SectionThree.css'
 const SectionThree = () => {
 
@@ -26,10 +26,11 @@ const SectionThree = () => {
             <button onClick={navegateToMagePage }>Show More</button>
           </div>
 
-          <div className="col-12 col-md-4 col-lg-4 img-dev">
+          <div className="col-12  col-sm-12  col-md-6 col-lg-6 img-dev">
             <img
               className="img-fluid"
               src={carBanner} 
+           
               alt=""
             />
           </div>

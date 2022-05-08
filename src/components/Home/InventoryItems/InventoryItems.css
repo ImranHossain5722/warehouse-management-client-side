@@ -1,6 +1,21 @@
+.items-container{
+ background-image: url(../../../Images/LOCUJf.webp);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: black;
+  background-blend-mode: screen;
+
+
+}
 .inventory-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+   
+}
+.items-container h1{
+
+   
+    color: white;
 }
 
 .inventory-text{
@@ -8,3 +23,17 @@
     font-size:18px;
     
 }
+
+
+ /* responsive  */
+
+@media screen and (min-width: 250px) and (max-width: 670px) {
+    .inventory-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+  }
+

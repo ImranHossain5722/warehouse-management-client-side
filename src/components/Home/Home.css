@@ -1,27 +1,42 @@
 .div-wrap{
 background-image: url('../../Images/ca-bg-banner2.jpg');
 background-repeat: no-repeat;
-background-position: top;
+background-position:center;
 background-size: cover;
-height: 750px;
+
 
 }
 
-.img-div img{
-    margin:150px 0px 0px  0px;
-    
 
-}
 
-.div-wrap-text .tex-wrap{
-    /* margin: 20px 50px 0px 50px; */
-}
+
 
 
 .h1-text{
-padding:100px 0px 0px 0px ;
-font-size: 50px;
-color: white;
+padding-top:px ;
+font-size: 70px;
+color: rgb(27, 18, 18);
  font-weight: 800;
 
 }
+
+
+@media screen and (min-width: 250px) and (max-width: 670px) {
+    
+    .h1-text{
+       
+        font-size: 35px;
+        color: rgb(27, 18, 18);
+        font-weight: 800;
+        
+        }
+
+
+        .div-wrap-text {
+ 
+            margin-left:5px;
+ 
+        }
+
+
+  }

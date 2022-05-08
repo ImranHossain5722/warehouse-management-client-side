@@ -41,6 +41,7 @@ const addItemsHandel =(event)=>{
 }
 
   return (
+    <div className="main-div-AddItem pt-5 pb-5">
     <div className="w-50 mx-auto main-form-wrap">
       <Form className="form " onSubmit={addItemsHandel }>
           <h1 className="text-center p-3 text-white">Add Stock Items</h1>
@@ -100,6 +101,7 @@ const addItemsHandel =(event)=>{
           Add Items
         </Button>
       </Form>
+    </div>
     </div>
   );
 };

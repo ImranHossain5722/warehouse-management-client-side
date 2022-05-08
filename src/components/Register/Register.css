@@ -1,7 +1,15 @@
+.main-wrapForm{
+
+
+    background-image: url('../../Images/LOCUJf.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .form-container{
 
 border-radius: 20px;
-background: linear-gradient(145deg, #b19d9d, #7f84d1);
+background: linear-gradient(145deg, #b19d9d, #7f85d1d2);
 box-shadow:  35px 35px 100px #bebebe,
              -35px -35px 100px #ffffff;
 

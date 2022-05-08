@@ -11,7 +11,7 @@ My Project live server-site link: https://rocky-dawn-40302.herokuapp.com/
 * You Can ADD you Stock your items .
 * you can DELETE your Stock items.
 * you can UPDATE you added items by update form .
-
+* Blog Navigation 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -26,19 +26,21 @@ const InventoryItems = () => {
 
 
   return (
-    <div className="container">
-      <div className="row ">
+    <div className="items-container">
+      <div className="container">
+        <div className="row ">
           <h1 className="text-center pt-4">We have items in stock: {inventoryItems.length}</h1>
           <div style={{ height: "3px" , width:"50px" }} className="bg-primary  mx-auto "></div>
 
-          <div className="inventory-container  " >
+          <div className="inventory-container" >
               {
                 inventory.map(inventoryItem => <InventoryItem key={inventoryItem._id} inventoryItem={inventoryItem} > </InventoryItem>)
               }
               
              
           </div>
-          <Button className=" w-25 mx-auto mt-5" onClick={()=>moveToManageItemPage()}> Manage Inventory All Items </Button>
+          <Button className=" w-25 mx-auto  m-5" onClick={()=>moveToManageItemPage()}> Manage Inventory All Items </Button>
+        </div>
       </div>
     </div>
   );

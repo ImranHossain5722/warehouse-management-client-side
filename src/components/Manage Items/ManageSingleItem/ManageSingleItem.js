@@ -22,7 +22,7 @@ const navigate = useNavigate ()
         <img className="figure-img img-fluid rounded" src={img} alt="" />
       </div>
 
-      <div className=" items-container">
+      <div className=" Single-items-container">
         <div className="items-details">
   
           <p> <span className="items-detail">Brand:</span> {brand}</p>

@@ -68,7 +68,7 @@ const ManageItems = () => {
               handelDelete={handelDelete}
             ></ManageSingleItem>
           ))}
-          <div className="pageination">
+          <div className="pageination m-5">
             {[...Array(pageCount).keys()].map((number) => (
               <button
                 className={page === number ? "selected" : ""}

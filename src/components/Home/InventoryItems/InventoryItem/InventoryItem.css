@@ -1,11 +1,11 @@
 .inventory-item-div{
-    border-radius: 19px;
+    border-radius: 10px;
     background: #f3ecec;
-    box-shadow:  5px -5px 10px #c5bfbf,
-                 -5px 5px 10px #ffffff;
+    box-shadow:  0px -0px 0px #c5bfbf,
+                 5px 5px 8px #968a8a;
     position: relative;
-    height: 820px;
-    width: 350px;
+    height: 750px;
+    width: 300px;
 
 
 }

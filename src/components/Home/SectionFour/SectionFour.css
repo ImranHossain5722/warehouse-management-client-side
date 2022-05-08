@@ -1,7 +1,8 @@
 .main-div {
-    background-color: rgb(20, 19, 19);
-    padding: 20px;
+    background-color: #141212;
+ 
     margin-top: 50px;
+    padding-bottom:25px;
 }
 .span-carSale{
     color: white;
@@ -19,9 +20,9 @@
     background-image: url(../../../Images/gpCar.jpg),linear-gradient(rgba(28, 29, 37, 0.5),rgba(7, 3, 3, 0.5));
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-blend-mode: overlay;
-    height: 600px;
+    height: 590px;
     position: relative;    
 
 }

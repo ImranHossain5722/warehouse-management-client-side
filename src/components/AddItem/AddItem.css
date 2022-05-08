@@ -1,7 +1,15 @@
+.main-div-AddItem {
+
+    background-image: url('../../Images/gpCar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .main-form-wrap{
     margin-top: 50px;
     border-radius: 11px;
-    background: #636ec5;
+    background: #636fc5ab;
     box-shadow: inset -20px 20px 36px #545ea7,
                 inset 20px -20px 36px #727fe3;
 }

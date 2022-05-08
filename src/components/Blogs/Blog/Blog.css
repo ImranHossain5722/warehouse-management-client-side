@@ -1,13 +1,13 @@
 .blog-wrap {
-  border-radius: 5px;
+  border-radius: 10px;
   background: linear-gradient(145deg, #aec1cf, #cfe5f6);
-  box-shadow: 35px 35px 100px #b5c9d8, -35px -35px 100px #cde3f4;
+  
   height: 700px;
 }
 .blog-btn {
   margin-top: 10px;
   border: 1px solid white;
-  color: beige;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   padding: 8px;
   background: linear-gradient(145deg, #aec1cf, #cfe5f6);

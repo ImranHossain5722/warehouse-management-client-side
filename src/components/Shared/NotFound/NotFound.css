@@ -1,0 +1,21 @@
+.mainNotFound{
+    height: 500px;
+    background-image: url(../../../Images/notfound.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.notFoundtButton{
+    border: none;
+    border-radius: 144px;
+    color: white;
+    padding:10px;
+    background: #81cafa;
+box-shadow:  16px 16px 30px #bebebe,
+             -16px -16px 30px #ffffff;
+}
+
+.notFoundtButton:hover{
+    background-color: brown;
+}

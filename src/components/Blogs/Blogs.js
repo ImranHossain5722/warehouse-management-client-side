@@ -13,8 +13,10 @@ const Blogs = () => {
       .then((data) => setBlogs(data));
   }, []);
   return (
-    <div className="container"> 
-      <h2 className="mt-5 text-center">Our Blogs</h2>
+
+    <div className="main-container">
+      <div className="container"> 
+      <h1 className="pt-5 text-center text-white">Our Blogs</h1>
       <div
         style={{ height: "3px", width: "50px" }}
         className="bg-primary  mx-auto "
@@ -32,6 +34,8 @@ const Blogs = () => {
         </div>
       </div>
     </div>
+    </div>
+
   );
 };
 

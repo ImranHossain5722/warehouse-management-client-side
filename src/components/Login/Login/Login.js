@@ -6,11 +6,12 @@ import SocialLogin from "../../../components/Login/SocialLogin/SocialLogin";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import {toast } from 'react-toastify';
 import axios from "axios";
+import './Login.css'
 
 
 const Login = () => {
   const location =useLocation();
-  let errorElement;
+  
   let from = location.state?.from?.pathname || "/";
 
   //for navigate
@@ -24,14 +25,14 @@ const Login = () => {
 
 
   if (user) {
-    // navigate(from, { replace: true });
+    navigate(from, { replace: true });
   }
 
   if (error) {
-    errorElement = toast (
-      <div>
+     toast (
+      
         <p className="text-danger">Error: {error?.message} </p>
-      </div>
+      
     );
   }
 
@@ -44,13 +45,13 @@ const Login = () => {
     await signInWithEmailAndPassword(email, password);
     const {data} = await axios.post('https://rocky-dawn-40302.herokuapp.com/login',{email})
 
-    console.log(data)
   };
 
 
 
   return (
-    <div className=" w-50 mx-auto mt-5 form-container ">
+    <div className="login-wrap pt-5 pb-5">
+    <div className=" w-50 mx-auto form-container ">
       <h1 className=" text-center pt-4">Login Please </h1>
       <Form className="form  mx-auto" onSubmit={loginHandal}>
         <Form.Group className="mb-5" controlId="formBasicEmail">
@@ -93,6 +94,7 @@ const Login = () => {
         </Link>
       </p>
       <SocialLogin></SocialLogin>
+    </div>
     </div>
   );
 };
