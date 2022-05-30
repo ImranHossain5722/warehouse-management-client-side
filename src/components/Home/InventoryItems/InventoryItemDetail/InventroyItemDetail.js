@@ -16,13 +16,7 @@ const InventoryItemDetail = () => {
         const newQuantity = parseInt(inventoryItem.quantity)-1
         setIsReload(newQuantity)
         console.log(newQuantity);
-
-      
         }
-
-
-
-
   useEffect(() => {
     fetch(
       `https://rocky-dawn-40302.herokuapp.com/inventoryItems/${inventoryItemId}`
